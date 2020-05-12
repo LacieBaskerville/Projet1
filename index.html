@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- En-tête de la page -->
+        <meta charset="utf-8" />
+        <title>Mon CV</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="fontawesome-5.13.0/css/all.css">
+</link>
+    </head>
+
+    <body>
+        
+        <div id="container">
+
+            <!-- Côté gauche du CV en couleur-->
+            <aside>
+
+                <div id="photo">
+                    <img src="photoCV.jpg" alt="Photo du CV" /></p>
+                </div>
+                 
+                <div class="element">
+                    <h1>Contact</h1>
+                    <p>
+                        7 rue de la Haute Mitrie<br />
+                        Nantes, France
+                    </p>
+                    <p>
+                        Téléphone<br />
+                        07.52.92.23.13
+                    </p>
+                    <p>
+                        E-mail<br />
+                        aurynparanteau@gmail.com
+                    </p>
+                    <p>
+                        Site Web<br />
+                        www.aurynparanteau.com
+                    </p>
+                    <p>
+                        Skype<br />
+                        @aurynparanteau
+                    </p>
+                </div>
+            
+                <div class="element">
+                    <h1>A propos de moi</h1>
+                    <p>A partir d'une formation dans l'enseignement, j'ai décidé de me réorienter en suivant une formation en développement Web sur OpenClassrooms.</p>
+                </div>
+                
+                <div class="element">
+                    <h1>Loisirs</h1>
+                    <div id="fontawesomes">   
+                        <div class="fontawesome">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="fontawesome">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="fontawesome">
+                            <i class="fas fa-atom"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </aside>
+
+            <!-- Côté droit : Corps du CV en blanc-->
+            <main>
+                <header>
+                    <h1><strong>Auryn</strong> Paranteau</h1>
+                    <h2>Développeuse Web</h2>
+                    <div id="bordure"></div>
+                </header>
+
+                <!-- 1ère section : formation. Organisation en flexbox -->
+                <section id="formation">
+                    <h1>Formation</h1>
+                    <div class="bordure2"></div>
+                    <article>
+                        <div class="date">
+                            <p>2020<br />
+                            Nantes</p>
+                        </div>
+                        <div class="item">
+                            <h2>Parcours Développeur Web</h2>
+                            <p>OpenClassrooms</p>
+                            <p>Formation en cours, à distance et mentorée en Développement Web, débouchant sur un diplôme de niveau 5 (Bac+2) certifié par l'Etat.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="date">
+                            <p>2015-2017<br />
+                            Orsay et Nantes</p>
+                        </div>
+                        <div class="item">
+                            <h2>M1 MEEF Second degré option Physique-Chimie</h2>
+                            <p>Université Paris-Sud puis Nantes</p>
+                            <p>Formation destinée à préparer le CAPES de physique-Chimie. J'ai décidé de me réorienter courant 2017.</p>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- 2ère section : expérience professionnelle. Organisation en flexbox -->
+                <section id="experience">
+                    <h1>Expérience professionnelle</h1>
+                    <div class="bordure2"></div>
+                    <article>
+                        <div class="date">
+                            <p>Février 2019 - Juillet 2019<br />
+                            Rezé</p>
+                        </div>
+                        <div class="item">
+                            <h2>Pôle Emploi</h2>
+                            <p>Service Civique</p>
+                            <p>Accompagnatrice des demandeurs d'emploi dans l'utilisation aux outils numériques aux points internet en libre accès à l'accueil de l'agence Pôle Emploi.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="date">
+                            <p>Décembre 2017 - Avril 2018<br />
+                            Nantes</p>
+                        </div>
+                        <div class="item">
+                            <h2>Acadomia</h2>
+                            <p>Enseignante à domicile</p>
+                            <p>Soutien en mathématiques à domicile à des élèves de la 5ème à la 1ère.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="date">
+                            <p>Janvier 2015 - Octobre 2016<br />
+                            Le Mans, Orsay, Montlhéry, Nantes</p>
+                        </div>
+                        <div class="item">
+                            <h2>Etablissements scolaires</h2>
+                            <p>Stagiaire en obersation/pratique)</p>
+                            <p>
+                                Janvier 2015 - Collège Alain Fournier (Le Mans)<br />
+                                Novembre 2015 - Lycée Blaise Pascal (Orsay)<br />
+                                Février 2016 - Collège Paul Fort (Montlhéry)<br />
+                                Octobre 2016 -Lycée La Colinière (Nantes)
+                            </p>
+                        </div>
+                    </article>
+                </section>
+
+                <!-- 3ère section : expérience professionnelle. Organisation en flexbox -->
+                <section id="recommandations">
+                    <h1>Recommandations</h1>
+                    <div class="bordure2"></div>
+                    <article>
+                        <div id="recommandation1">
+                            <p>CLAIRE MARRACHE</p>
+                            <p>Responsable de la licence de Physique Fondamentale</p>
+                            <p>Téléphone : 01.23.45.67.89</p>
+                            <p>claire.marrache@u-psud.fr</p>
+                        </div>
+                        <div id="recommandation2">
+                            <p>ADELINE MARTIN
+                            <p>Directrice d'agence</p>
+                            <p>Téléphone : 01.02.03.04.05</p>
+                            <p>adeline.martine@gmail.com</p>
+                        </div>
+                    </article>
+                </section>
+
+            </main>
+
+        </div>
+    </body>
+</html>

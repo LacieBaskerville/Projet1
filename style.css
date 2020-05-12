@@ -1,0 +1,220 @@
+/* Eléments principaux de la page */
+
+#container
+{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+h1
+{
+    text-transform: uppercase;
+}
+
+p
+{
+    font-size: 0.8em;
+}
+
+/* 1. Côté gauche du CV */
+
+aside
+{
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+    background-color: #FECA07;
+    display: flex;
+    flex-direction: column;
+}
+
+#photo
+{
+    width: 154px;
+    height: 154px;
+    margin: 50px auto 20px;
+}
+
+img
+{
+    border: solid 2px #DAAF12;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.element:nth-child(3)
+{
+    flex: 1;
+}
+
+.element p
+{
+    padding: 0 20px 0 20px;
+}
+
+.element h1
+{
+    background-color: #404040;
+    color: #FECA07;
+    text-align: center; 
+}
+
+
+#fontawesomes
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fontawesome
+{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: solid 3px #404040;
+    margin: 5px;
+}
+
+.fas
+{
+    font-size: 40px;
+    color: #404040;
+    margin: auto;
+}
+
+/* 2. Côté droit du CV */
+
+/* 2.1- Le Header */
+
+main
+{
+    flex: 2;
+    padding: 50px;
+}
+
+header h1
+{
+    font-size: 3em;
+    font-weight: 1;
+    margin-bottom: 0;
+}
+
+header h1 strong
+{
+    color: #FECA07;
+}
+
+header h2
+{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 1.3em;
+    font-weight: 1;
+    
+}
+
+#bordure
+{
+    margin-top: 5px;
+    margin-bottom: 100px;
+    width: 70px;
+    height: 2px;
+    background-color: #FECA07;
+}
+
+/* 2.2 Sections */
+
+section h1::before
+{
+    font-size: 40px;
+    color: #FECA07;
+    margin-right: 20px;
+}
+
+#formation h1::before
+{
+    font-family: "Font Awesome 5 Free";
+    content: "\f19d";
+}
+
+#experience h1::before
+{
+    font-family: "Font Awesome 5 Free";
+    content: "\f0b1";
+}
+
+#recommandations h1::before
+{
+    font-family: "Font Awesome 5 Free";
+    content: "\f303";
+}
+
+section h1
+{
+    margin-bottom: 0;
+}
+
+.bordure2
+{
+    margin: 5px auto 20px;
+    width: 100%;
+    height: 2px;
+    background-color: #FECA07;
+}
+
+.date p::before
+{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #FECA07;
+}
+
+section h2
+{
+    text-transform: uppercase;
+    font-weight: 1;
+}
+
+article
+{
+    display: flex;
+}
+
+.date
+{
+    flex: 1;
+}
+
+.item
+{
+    flex: 2;
+}
+
+#recommandation1
+{
+    flex: 1;
+}
+
+#recommandation2
+{
+    flex: 1;
+}
+
+@media all and (max-width: 700px)
+{
+    #container
+    {
+        display: block;
+    }
+
+    .date, #recommandation1
+    {
+        margin-right: 20px;
+    }
+}
