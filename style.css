@@ -8,7 +8,7 @@
     font-family: Arial, sans-serif;
 }
 
-h1
+h1, h3, h4, .element h2
 {
     text-transform: uppercase;
 }
@@ -55,13 +55,13 @@ img
     padding: 0 20px 0 20px;
 }
 
-.element h1
+.element h2
 {
     background-color: #404040;
     color: #FECA07;
     text-align: center; 
+    font-size: 1.5em;
 }
-
 
 #fontawesomes
 {
@@ -97,7 +97,7 @@ main
     padding: 50px;
 }
 
-header h1
+h1
 {
     font-size: 3em;
     font-weight: 1;
@@ -109,13 +109,12 @@ header h1 strong
     color: #FECA07;
 }
 
-header h2
+h2
 {
     margin-top: 5px;
     margin-bottom: 0;
     font-size: 1.3em;
     font-weight: 1;
-    
 }
 
 #bordure
@@ -129,33 +128,34 @@ header h2
 
 /* 2.2 Sections */
 
-section h1::before
+section h3::before
 {
     font-size: 40px;
     color: #FECA07;
     margin-right: 20px;
 }
 
-#formation h1::before
+#formation h3::before
 {
     font-family: "Font Awesome 5 Free";
     content: "\f19d";
 }
 
-#experience h1::before
+#experience h3::before
 {
     font-family: "Font Awesome 5 Free";
     content: "\f0b1";
 }
 
-#recommandations h1::before
+#recommandations h3::before
 {
     font-family: "Font Awesome 5 Free";
     content: "\f303";
 }
 
-section h1
+h3
 {
+    font-size: 1.5em;
     margin-bottom: 0;
 }
 
@@ -175,9 +175,10 @@ section h1
     background-color: #FECA07;
 }
 
-section h2
+h4
 {
-    text-transform: uppercase;
+    margin-top: 15px;
+    font-size: 1.5em;
     font-weight: 1;
 }
 
@@ -206,11 +207,20 @@ article
     flex: 1;
 }
 
+/* Responsive */
+
 @media all and (max-width: 700px)
 {
+    
     #container
     {
         display: block;
+    }
+
+    aside
+    {
+        width: 100%;
+        max-width: none;
     }
 
     .date, #recommandation1
