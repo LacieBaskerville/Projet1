@@ -100,7 +100,7 @@ main
 h1
 {
     font-size: 3em;
-    font-weight: 1;
+    font-weight: 100;
     margin-bottom: 0;
 }
 
@@ -114,7 +114,7 @@ h2
     margin-top: 5px;
     margin-bottom: 0;
     font-size: 1.3em;
-    font-weight: 1;
+    font-weight: 100;
 }
 
 #bordure
@@ -179,10 +179,10 @@ h4
 {
     margin-top: 15px;
     font-size: 1.5em;
-    font-weight: 1;
+    font-weight: 100;
 }
 
-article
+article, #recomm
 {
     display: flex;
 }
